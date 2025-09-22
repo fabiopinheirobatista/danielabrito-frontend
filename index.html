@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daniela Brito — Design de Interiores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Daniela<br>Brito</div>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Design de Interiores e Arquitetura</h1>
+      <p>Projetos que unem estética e funcionalidade.</p>
+      <button id="cta">Conheça o trabalho</button>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre</h2>
+      <p>O escritório Daniela Brito desenvolve projetos que trazem a materialização dos sonhos dos clientes...</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2>Projetos recentes</h2>
+      <div class="grid" id="gallery"></div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Vamos ao trabalho</h2>
+      <form id="contactForm" novalidate>
+        <input name="nome" placeholder="Nome" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="telefone" placeholder="Telefone" />
+        <textarea name="mensagem" placeholder="Insira sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+        <div id="formMsg" role="status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Endereço: Rua Nicolau Miguel Obeide, 1146 - Bertioga/SP</div>
+    <div>Tel.: (13) 99732-9126</div>
+  </footer>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
